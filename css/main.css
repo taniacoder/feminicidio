@@ -1,0 +1,18 @@
+		#section1 img{
+			left: 130%;
+			position:relative;
+		}
+		#section1 p{
+			display:none;
+		}
+		#section2 .intro{
+			left: -130%;
+			position:relative;
+		}
+
+#ver{
+	background-color: black;
+	padding: 9px 18px;    
+    text-decoration: none;
+    color: white;
+}
