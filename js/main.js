@@ -1,34 +1,19 @@
-$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-				menu: '#menu',
-				afterLoad: function(anchorLink, index){
+/*$(window).load(function() {
+responsive();
+window.addEventListener('resize', responsive);
+			function responsive(){
+			var ancho = $(window).outerWidth()
 
-					//section 2
-					if(index == 2){
-						//moving the image
-						$('#section1').find('img').delay(500).animate({
-							left: '0%'
-						}, 1500, 'easeOutExpo');
-
-						$('#section1').find('p').first().fadeIn(1800, function(){
-							$('#section1').find('p').last().fadeIn(1800);
-						});
-
-					}
-
-					//section 3
-					if(anchorLink == '3rdPage'){
-						//moving the image
-						$('#section2').find('.intro').delay(500).animate({
-							left: '0%'
-						}, 1500, 'easeOutExpo');
-					}
-				}
-			});
-		});
-
+			if(ancho<544){
+				var container_fluid=document.getElementsByClassName("container-fluid")[0]
+			for(var i=0; i<container_fluid.childNodes.length; i++) {
+  			var divs = container_fluid.childNodes[i].classList.remove('allh middleh')
+}
+			}
+			console.log(container_fluid)
+			console.log(divs)
+		}
+})*/
 // $(document).on('click', '#ver', function(){
 //   $.fn.fullpage.moveTo('secondPage', 0);
 // });
