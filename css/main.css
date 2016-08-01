@@ -1,7 +1,6 @@
 .fp-tableCell{
 	vertical-align: inherit;
 }
-
 .chichico{
   background: url(../images/chichico.jpg) no-repeat; 
   -webkit-background-size: cover;
@@ -12,10 +11,39 @@
   width:100%;
 }
 
-.allh{
-	height:100%;
+.chichico button{
+  color:whitesmoke;
+}
+.v-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.mh{
-	height:50%;
+.modal-transparent {
+  background: transparent;
+}
+.modal-transparent .modal-content {
+  background: transparent;
+  color: white;
+}
+.modal-backdrop.modal-backdrop-transparent {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-transparent.in {
+  opacity: .3;;
+  filter: alpha(opacity=90);
+}
+
+button[data-toggle="modal"]{
+	background: transparent;
+    border: none;
+}
+.close{
+	    opacity: .5;
+	    color:white;
+}
+
+[class*="col"]{
+padding:0;
 }
