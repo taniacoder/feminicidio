@@ -1,10 +1,6 @@
 .fp-tableCell{
 	vertical-align: inherit;
 }
-[class^="col-"]{
-	margin:0px;
-	padding:0px;
-}
 
 .chichico{
   background: url(../images/chichico.jpg) no-repeat; 
@@ -12,7 +8,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:282px;
+  height:300px;
   width:100%;
 }
 
@@ -20,6 +16,6 @@
 	height:100%;
 }
 
-.middleh{
+.mh{
 	height:50%;
 }
