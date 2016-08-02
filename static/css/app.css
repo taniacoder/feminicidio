@@ -1,0 +1,106 @@
+/**
+ * Femicide Map Infographic CSS
+ */
+
+/**
+ */
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: 100px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.hoverinfo {
+    padding: 0!important;
+}
+
+.legend td,
+.legend th,
+.hoverinfo td,
+.hoverinfo th {
+    padding: 10px 5px;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.legend .femicide,
+.hoverinfo .femicide {
+    background-image: url('../images/coffin.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 2rem;
+}
+
+.legend .attempted,
+.hoverinfo .attempted {
+    background-image: url('../images/knife.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 2rem;
+}
+
+#map-canvas {
+    width: 250px;
+    height: 362px;
+    position: relative;
+    overflow: visible;
+    display: block;
+    margin: 0 auto;
+}
+
+#legend {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 180px;
+}
+@media only screen and (max-width: 767px) {
+ .legend th{
+        font-size: 0.8rem;
+        position: relative;
+        left: -24px;
+    }
+    #legend{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #map-canvas {
+        width: 400px;
+        height: 560px;
+    }    
+}
+
+@media only screen and (min-width: 993px) {
+    #map-canvas {
+        width: 450px;
+        height: 600px;
+    }
+    #legend{
+        bottom:60px;
+    }
+}
+
+#map-canvas svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
