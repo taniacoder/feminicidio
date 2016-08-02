@@ -81,7 +81,6 @@ var map;
                     // Hover on Lima Metropolitana will
                     // show Lima Department stats
                     //mapData["PE.LP"] = mapData["PE.LR"];
-
                     // Creating Filling Scale
                     keys = Object.keys(mapData);
                     femicides = keys.map(function(key){ return mapData[key]["femicides"]; });

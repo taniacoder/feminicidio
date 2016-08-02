@@ -20,7 +20,7 @@ padding:0;
   width:100%;
 }
 
-.chichico button{
+.chichico a{
   color:whitesmoke;
 }
 
@@ -45,10 +45,17 @@ padding:0;
   filter: alpha(opacity=90);
 }
 
-button[data-toggle="modal"]{
-	background: transparent;
+a[data-toggle="modal"]{
+	  background: transparent;
     border: transparent;
+    width: auto;
+    height: auto;
 }
+
+a:active, a:focus, a:target{
+  border:none;
+}
+
 .close{
 	    opacity: .5;
 	    color:white;

@@ -25,7 +25,7 @@ function poner_modal () {
 	 var chichico= document.getElementsByClassName("chichico")
 	 for (var i=0; i<chichico.length; i++) {
 	 var modal= document.createElement("div");
-	 	modal.innerHTML='<button type="button" data-toggle="modal" data-target=#'+[i]+'><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></button>'
+	 	modal.innerHTML='<a type="button" data-toggle="modal" data-target=#'+[i]+'><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></a>'
 	 	chichico[i].appendChild(modal)
 	 }
 
