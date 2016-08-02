@@ -6,6 +6,10 @@
   position:relative !important;
 }
 
+[class*="col"]{
+padding:0;
+}
+
 .chichico{
   background: url(../images/chichico.jpg) no-repeat; 
   -webkit-background-size: cover;
@@ -19,6 +23,7 @@
 .chichico button{
   color:whitesmoke;
 }
+
 .v-center{
     display: flex;
     justify-content: center;
@@ -42,13 +47,24 @@
 
 button[data-toggle="modal"]{
 	background: transparent;
-    border: none;
+    border: transparent;
 }
 .close{
 	    opacity: .5;
 	    color:white;
 }
 
-[class*="col"]{
-padding:0;
+.title-chart{
+  font-weight:bold;
+  margin-top:20px;
+}
+.panel-body{
+  padding-top:0px;
+}
+@media only screen and (max-width: 767px) {
+    .title-chart{
+      font-size: 1rem;
+      font-weight:bold;
+      margin-bottom:0px;
+    }
 }
