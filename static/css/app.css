@@ -49,8 +49,8 @@ main {
 }
 
 #map-canvas {
-    width: 250px;
-    height: 362px;
+    width: 260px;
+    height: 372px;
     position: relative;
     overflow: visible;
     display: block;

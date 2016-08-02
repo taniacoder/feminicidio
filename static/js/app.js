@@ -49,7 +49,7 @@ var map;
                 setProjection: function(element) {
                     var projection = d3.geo.mercator()
                         .center(mapCenter)
-                        .scale(3.5 * element.offsetWidth)
+                        .scale(3.8 * element.offsetWidth)
                         .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
 
                     var path = d3.geo.path()
