@@ -16,7 +16,8 @@ padding:0;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height:326px;
+  min-height:470px;
+  height:auto;
   width:100%;
 }
 
