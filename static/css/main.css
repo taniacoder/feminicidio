@@ -1,4 +1,4 @@
-p, .femicide, .attempted, th{
+p, .femicide, .attempted, th, h4{
   font-family: 'Rosario', sans-serif;
 }
 /*home*/
@@ -34,7 +34,6 @@ h1 {
   padding: 5% 3% 3% 0; 
 }
 .est-2{
-  text-align: center;
   padding-top: 5%;
 }
 /**/
