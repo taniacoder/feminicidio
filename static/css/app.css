@@ -49,7 +49,7 @@ main {
 }
 
 #map-canvas {
-    width: 370px;
+    width: 360px;
     height: 492px;
     position: relative;
     overflow: visible;
@@ -84,7 +84,7 @@ main {
 @media only screen and (min-width: 993px) {
     #map-canvas {
         width: 450px;
-        height: 600px;
+        height: 700px;
     }
     #legend{
         bottom:60px;

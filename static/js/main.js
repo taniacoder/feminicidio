@@ -2,7 +2,7 @@
 			{
 				this.ancho = $(window).outerWidth()
 				var r =document.getElementsByClassName("row")[1]
-				if (r && ancho<767){
+				if (r && ancho<768){
 					r.style.display = 'none';				
 				}
 

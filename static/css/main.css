@@ -19,7 +19,7 @@ padding:0;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height:483px;
+  min-height:100%;
   height:auto;
   width:100%;
 }
@@ -72,16 +72,32 @@ a:active, a:focus, a:target, .fa{
 .panel-body{
   padding-top:0px;
 }
+
+.allh{
+  height:100%;
+}
+
+.mh, .rh{
+  height:50%;
+}
+
 @media only screen and (max-width: 767px) {
     .title-chart{
       font-size: 1rem;
       font-weight:bold;
       margin-bottom:0px;
     }
+    .qh{
+      height:25%;
+    }
+
+    .rh{
+      height:100%;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
 .pr-70{
-  padding-right:70px;
+  padding-right:100px;
 }
 }
