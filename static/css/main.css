@@ -16,7 +16,7 @@ padding:0;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height:540px;
+  min-height:500px;
   height:auto;
   width:100%;
 }
@@ -53,7 +53,7 @@ a[data-toggle="modal"]{
     height: auto;
 }
 
-a:active, a:focus, a:target{
+a:active, a:focus, a:target, .fa{
   border:none;
 }
 
