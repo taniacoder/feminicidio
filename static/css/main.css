@@ -1,3 +1,43 @@
+p{
+  font-family: 'Rosario', sans-serif;
+}
+/*home*/
+h1 {
+  font-family: 'Rosario', sans-serif;
+  font-size: 66px;
+  color: #ED1C55;
+  padding: 5% 0 10%;
+  font-weight: bold;
+}
+.intro {
+  padding: 5%;
+}
+.text-home, .autor {
+  color: #fff;
+}
+/*button*/
+.estadisticas {
+  background: #F64164;
+  border: none;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  margin-top: 10%;
+}
+.estadisticas:active {
+  background: #ED1C55;
+}
+.estadisticas:focus {
+  outline:0px;
+}
+/*page2*/
+.text-2{
+  padding: 5% 3% 3% 0; 
+}
+.est-2{
+  text-align: center;
+  padding-top: 5%;
+}
+/**/
 .fp-tableCell{
 	vertical-align: inherit;
 }

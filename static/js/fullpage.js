@@ -2,7 +2,7 @@ $(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-				sectionsColor: ['#4A6FB1', '#FFFFFF', '#323539'],
+				sectionsColor: ['#3D3D3D', '#FFFFFF'],
 				scrollOverflow: true,
 				scrollOverflowOptions: {
 					scrollbars: true,
