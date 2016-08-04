@@ -29,6 +29,10 @@ h1 {
 .estadisticas:focus {
   outline:0px;
 }
+/*redes-sociales*/
+.redes-sociales {
+  padding: 5%;
+}
 /*page2*/
 .text-2{
   padding: 5% 3% 3% 0; 
