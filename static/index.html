@@ -190,7 +190,7 @@ Las que pudieron sobrevivir cuentan su historia, mientras sus agresores siguen l
         
         var player;
 
-        function playerapiid() {
+        function onYouTubePlayerAPIReady() {
           // create the global player from the specific iframe (#video)
           player = new YT.Player('video', {
             events: {
@@ -202,12 +202,12 @@ Las que pudieron sobrevivir cuentan su historia, mientras sus agresores siguen l
 
         function onPlayerReady(event) {
 
-          var playButton = document.getElementById("play-button");
+          var playButton = document.getElementsByClassName("play-button");
           playButton.addEventListener("click", function() {
             player.playVideo();
           });
           
-          var pauseButton = document.getElementById("pause-button");
+          var pauseButton = document.getElementsByClassName("pause-button");
           pauseButton.addEventListener("click", function() {
             player.pauseVideo();
           });
@@ -229,7 +229,7 @@ Las que pudieron sobrevivir cuentan su historia, mientras sus agresores siguen l
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button id="pause-button" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button class="pause-button" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 <h4 class="modal-title" id="myModalLabel">Modal title</h4>
             </div>
             <div class="modal-body">
@@ -246,7 +246,7 @@ Las que pudieron sobrevivir cuentan su historia, mientras sus agresores siguen l
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button id="pause-button" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <button class="pause-button" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 <h4 class="modal-title" id="myModalLabel">Modal title</h4>
             </div>
             <div class="modal-body">
