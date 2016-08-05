@@ -41,7 +41,7 @@ h1 {
   padding-top: 5%;
 }
 .map-description{
-  padding: 0 6% 0% 14%;
+    padding-left: 120px;
 }
 /**/
 .fp-tableCell{
@@ -139,6 +139,10 @@ a:active, a:focus, a:target, .fa{
 
     .rh{
       height:100%;
+    }
+
+    .map-description{
+      padding: 0
     }
 }
 
