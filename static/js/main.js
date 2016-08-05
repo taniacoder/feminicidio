@@ -105,7 +105,7 @@
 	        }
 	        obtener_md[k].insertBefore(modal_body, obtener_md[k].childNodes[1]);
 	        if (ancho < 500) {
-	            window.frames[k].style.height = "180px"
+	        	$('.modal-body').children('iframe').css( "height","-=135" );;
 	        }
 	    }
 	    footer_modal()
