@@ -4,13 +4,6 @@
 
 /**
  */
-body {
-    background-image: url("../images/bg.jpg");
-    background-size: 100px;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
 
 main {
     flex: 1 0 auto;

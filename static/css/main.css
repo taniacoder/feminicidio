@@ -70,6 +70,15 @@ padding:0;
 .chichico a{
   color:whitesmoke;
 }
+.modal-open .modal{
+  overflow-y: hidden;
+}
+
+.btn-default, .btn-default:hover, .btn-default:active{
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
 
 .v-center{
     display: flex;

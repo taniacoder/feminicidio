@@ -13,7 +13,7 @@
 
 	$(window).load(function() {
 		responsive();
-		get_modal()
+		obtener_modal()
 	window.addEventListener('resize', responsive);	
 	poner_modal() 
 		});			
@@ -31,49 +31,85 @@ function poner_modal () {
 	 }
 }
 
-function get_modal(){
-  var obtener_modal= document.getElementsByClassName("modal-body");
-  var poner_redes = document.getElementsByClassName("modal-footer")
-  for (var j=0; j<obtener_modal.length; j++){  		
-	  switch(obtener_modal[j]) {
-	    case obtener_modal[0]:
-	    var video= document.createElement("div")
-	      video.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
-	      obtener_modal[0].appendChild(video)	      
-	      break;
-	    case obtener_modal[1]:
-	    var video= document.createElement("div")
-	      video.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/XvKsDdQd3MY" frameborder="0" allowfullscreen></iframe>'
-	      obtener_modal[1].appendChild(video)
-	      break;
-	    case obtener_modal[2]:
-	    var video= document.createElement("div")
-	      video.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
-	      obtener_modal[2].appendChild(video)
-	      break;
-	    case obtener_modal[3]:
-	    var video= document.createElement("div")
-	      video.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/XvKsDdQd3MY" frameborder="0" allowfullscreen></iframe>'
-	      obtener_modal[3].appendChild(video)
-	      break;
-	    case obtener_modal[4]:
-	    var video= document.createElement("div")
-	      video.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
-	      obtener_modal[4].appendChild(video)
-	      break;
-	    case obtener_modal[5]:
-	    var video= document.createElement("div")
-	      video.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/XvKsDdQd3MY" frameborder="0" allowfullscreen></iframe>'
-	      obtener_modal[5].appendChild(video)
-	      break;
-	  }
+function obtener_modal(){
+  var modal_transparent = document.querySelectorAll("#modal-transparent")
+  for (var j=0; j<modal_transparent.length; j++){  		
+  modal_transparent[j].setAttribute('id', j);
+  var modal_dialog =  document.createElement("div")
+  modal_dialog.className = "modal-dialog"
+  modal_dialog.innerHTML='<div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Modal title</h4></div><div class="modal-footer"></div></div>'
+  modal_transparent[j].appendChild(modal_dialog)
   }
 
-  for (var k=0; k<poner_redes.length; k++){
-  	var redes = document.createElement("div")
-  	redes.innerHTML = '<button type="button" class="btn btn-default" data-dismiss="modal"><div class="redes-sociales"><!--Twitter--><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <!--Twitter--><!--facebook--><div class="fb-like" data-href="https://taniacoder.github.io/feminicidio/static/#firstPage" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div><!--facebook--></div></button>'
-  	poner_redes[k].appendChild(redes)
+var obtener_md= document.getElementsByClassName("modal-content")
+for (var k =0; k<obtener_md.length; k++){
+	  switch(obtener_md[k]) {
+	    case obtener_md[0]:
+  		var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="560" height="315" src="https://www.youtube.com/embed/tdM_ArIOkl8" frameborder="0" allowfullscreen></iframe><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iure est, ab sequi, similique dolores eius totam velit quia illo, porro vitae quaerat magnam repellat eos laborum amet molestiae natus neque repudiandae dignissimos. Maiores eius ullam ducimus corporis hic ea, quod in, aspernatur cupiditate et mollitia quasi excepturi deserunt. Commodi!</div>'
+	      obtener_md[0].appendChild(modal_body)	      	            
+	      break;
+	    case obtener_md[1]:
+	    var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
+	      obtener_md[1].appendChild(modal_body)	
+	      break;
+	    case obtener_md[2]:
+	    var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
+	      obtener_md[2].appendChild(modal_body)	
+	      break;
+	    case obtener_md[3]:
+	    var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
+	      obtener_md[3].appendChild(modal_body)	
+	      break;
+	    case obtener_md[4]:
+	    var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
+	      obtener_md[4].appendChild(modal_body)	
+	      break;
+	    case obtener_md[5]:
+	    var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
+	      obtener_md[5].appendChild(modal_body)	
+	      break;
+	    case obtener_md[6]:
+	    var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
+	      obtener_md[6].appendChild(modal_body)	
+	      break;
+	    case obtener_md[7]:
+	    var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
+	      obtener_md[7].appendChild(modal_body)	
+	      break;
+	    case obtener_md[8]:
+	    var modal_body= document.createElement("div")
+  		modal_body.className ="modal-body"
+		modal_body.innerHTML= '<iframe width="100%" height="315" src="https://www.youtube.com/embed/ogeOcqnSKQQ" frameborder="0" allowfullscreen></iframe>'
+	      obtener_md[8].appendChild(modal_body)	
+	      break;	      
+	  }
+	  obtener_md[k].insertBefore(modal_body, obtener_md[k].childNodes[1]);	
+}
+footer_modal()
   }
-  
+
+function footer_modal(){
+	  var poner_redes = document.getElementsByClassName("modal-footer")
+	  for (z=0; z<poner_redes.length; z++){	  	
+  		var redes = document.createElement("div")
+  	redes.innerHTML = '<div class="redes-sociales"><!--Twitter--><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <!--Twitter--><!--facebook--><div class="fb-like" data-href="https://taniacoder.github.io/feminicidio/static/#firstPage" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div><!--facebook--></div>'
+  	poner_redes[z].appendChild(redes)
+	  }
 }
 
