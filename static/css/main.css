@@ -168,6 +168,7 @@ a:active, a:focus, a:target, .fa{
     
     h1{
       padding:0px;
+      margin-bottom:0;
     }
 
     .estadisticas{
@@ -178,7 +179,9 @@ a:active, a:focus, a:target, .fa{
     .intro{
       padding:0 0 0 3%;
     }
-
+    .autor{
+        margin-bottom: 5px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
