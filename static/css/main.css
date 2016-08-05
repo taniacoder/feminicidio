@@ -4,7 +4,7 @@ p, .femicide, .attempted, th, h4{
 /*home*/
 h1 {
   font-family: 'Rosario', sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #ED1C55;
   padding: 5% 0 10%;
   font-weight: bold;
@@ -188,10 +188,10 @@ a:active, a:focus, a:target, .fa{
 
 
 @media only screen and (min-width: 1200px) {
-.pr-70{
+.pr-100{
   padding-right:100px;
 }
 h1{
-  font-size:8rem
+  font-size:6rem
 }
 }
