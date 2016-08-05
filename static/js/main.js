@@ -17,7 +17,7 @@
 
 	$(window).load(function() {
 	    responsive();
-	    obtener_modal()
+	    obtener_modal(ancho)
 	    window.addEventListener('resize', responsive);
 	    poner_modal()
 	});
@@ -35,7 +35,7 @@
 	    }
 	}
 
-	function obtener_modal() {
+	function obtener_modal(ancho) {
 	    var modal_transparent = document.querySelectorAll("#modal-transparent")
 	    for (var j = 0; j < modal_transparent.length; j++) {
 	        modal_transparent[j].setAttribute('id', j);
@@ -104,6 +104,9 @@
 	                break;
 	        }
 	        obtener_md[k].insertBefore(modal_body, obtener_md[k].childNodes[1]);
+	        if (ancho < 500) {
+	            window.frames[k].style.height = "180px"
+	        }
 	    }
 	    footer_modal()
 	}

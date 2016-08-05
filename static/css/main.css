@@ -147,9 +147,10 @@ a:active, a:focus, a:target, .fa{
 
 @media only screen and (max-width: 500px) {
 .modal-body iframe{
-  height:180px;
+  height:200px;
 }
 }
+
 @media only screen and (max-width: 767px) {
     .title-chart{
       font-size: 1rem;
@@ -184,6 +185,6 @@ a:active, a:focus, a:target, .fa{
   padding-right:100px;
 }
 h1{
-  font-size:9rem
+  font-size:8rem
 }
 }
