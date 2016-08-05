@@ -47,12 +47,9 @@ h1 {
   padding-top: 2%;
   margin-bottom:90px;
 }
-.map-description{
-    padding-left: 120px;
-}
 /**/
 .fp-tableCell{
-	vertical-align: inherit;
+  vertical-align: inherit;
 }
 
 .iScrollVerticalScrollbar{
@@ -113,7 +110,7 @@ padding:0;
 }
 
 a[data-toggle="modal"]{
-	  background: transparent;
+    background: transparent;
     border: transparent;
     width: auto;
     height: auto;
@@ -124,8 +121,8 @@ a:active, a:focus, a:target, .fa{
 }
 
 .close{
-	    opacity: .5;
-	    color:white;
+      opacity: .5;
+      color:white;
 }
 
 .title-chart{
@@ -168,10 +165,6 @@ a:active, a:focus, a:target, .fa{
     .rh{
       height:100%;
     }
-
-    .map-description{
-      padding: 0
-    }
     
     h1{
       padding:0px;
@@ -186,14 +179,10 @@ a:active, a:focus, a:target, .fa{
     .intro{
       padding:0 0 0 3%;
     }
-<<<<<<< HEAD
-
-=======
     .autor{
         margin-bottom: 5px;
     }
 }
->>>>>>> proyecto/master
 
 @media only screen and (min-width: 1200px) {
 .pr-100{

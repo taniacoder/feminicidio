@@ -30,7 +30,7 @@
 	    var chichico = document.getElementsByClassName("chichico")
 	    for (var i = 0; i < chichico.length; i++) {
 	        var modal = document.createElement("div");
-	        modal.innerHTML = '<a href= "" type="button" data-toggle="modal" data-target=#' + [i] + '><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></a>'
+	        modal.innerHTML = '<a id="play-button" href= "" type="button" data-toggle="modal" data-target=#' + [i] + '><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></a>'
 	        chichico[i].appendChild(modal)
 	    }
 	}
@@ -45,22 +45,13 @@
 	        modal_transparent[j].appendChild(modal_dialog)
 	    }
 
-
-function poner_modal () {
-	 var chichico= document.getElementsByClassName("chichico")
-	 for (var i=0; i<chichico.length; i++) {
-	 var modal= document.createElement("div");
-	 	modal.innerHTML='<a id="play-button" href= "" type="button" data-toggle="modal" data-target=#'+[i]+'><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></a>'
-	 	chichico[i].appendChild(modal)
-	 }
-
 	    var obtener_md = document.getElementsByClassName("modal-content")
 	    for (var k = 0; k < obtener_md.length; k++) {
 	        switch (obtener_md[k]) {
 	            case obtener_md[0]:
 	                var modal_body = document.createElement("div")
 	                modal_body.className = "modal-body"
-	                modal_body.innerHTML = '<iframe width="100%" height="315" src="https://www.youtube.com/embed/tdM_ArIOkl8" frameborder="0" allowfullscreen></iframe><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iure est, ab sequi, similique dolores eius totam velit quia illo, porro vitae quaerat magnam repellat eos laborum amet molestiae natus neque repudiandae dignissimos. Maiores eius ullam ducimus corporis hic ea, quod in, aspernatur cupiditate et mollitia quasi excepturi deserunt. Commodi!</div>'
+	                modal_body.innerHTML = '<iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/XvKsDdQd3MY?enablejsapi=1" frameborder="0" allowfullscreen></iframe><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iure est, ab sequi, similique dolores eius totam velit quia illo, porro vitae quaerat magnam repellat eos laborum amet molestiae natus neque repudiandae dignissimos. Maiores eius ullam ducimus corporis hic ea, quod in, aspernatur cupiditate et mollitia quasi excepturi deserunt. Commodi!</div>'
 	                obtener_md[0].appendChild(modal_body)
 	                break;
 	            case obtener_md[1]:
@@ -120,7 +111,6 @@ function poner_modal () {
 	    footer_modal()
 	}
 
-
 	function footer_modal() {
 	    var poner_redes = document.getElementsByClassName("modal-footer")
 	    for (z = 0; z < poner_redes.length; z++) {
@@ -129,3 +119,36 @@ function poner_modal () {
 	        poner_redes[z].appendChild(redes)
 	    }
 	}
+
+//playerclose
+
+var tag = document.createElement('script');
+            tag.src = "//www.youtube.com/player_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+        var player;
+
+        function onYouTubePlayerAPIReady() {
+          // create the global player from the specific iframe (#video)
+          player = new YT.Player('video', {
+            events: {
+              // call this function when player is ready to use
+              'onReady': onPlayerReady
+            }
+          });
+        }
+
+        function onPlayerReady(event) {
+
+          var playButton = document.getElementById("play-button");
+          playButton.addEventListener("click", function() {
+            player.playVideo();
+          });
+                  
+          var pauseButton = document.getElementById("pause-button");
+          pauseButton.addEventListener("click", function() {
+            player.pauseVideo();
+          });
+          
+        }
