@@ -1,7 +1,7 @@
 $(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				sectionsColor: ['#1bbc9b', '#4BBFC3'],
+				anchors: ['testimonios', 'estadisticas'],
 				sectionsColor: ['#3D3D3D', '#FFFFFF'],
 				scrollOverflow: true,
 				scrollOverflowOptions: {
