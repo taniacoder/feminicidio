@@ -4,13 +4,6 @@
 
 /**
  */
-body {
-    background-image: url("../images/bg.jpg");
-    background-size: 100px;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
 
 main {
     flex: 1 0 auto;
@@ -49,8 +42,8 @@ main {
 }
 
 #map-canvas {
-    width: 360px;
-    height: 492px;
+    width: 250px;
+    height: 412px;
     position: relative;
     overflow: visible;
     display: block;
@@ -83,8 +76,8 @@ main {
 
 @media only screen and (min-width: 993px) {
     #map-canvas {
-        width: 450px;
-        height: 700px;
+        width: 470px;
+        height: 720px;
     }
     #legend{
         bottom:60px;

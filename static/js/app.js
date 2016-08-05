@@ -40,8 +40,8 @@ var map;
                     popupOnHover: true,
                     highlightOnHover: true,
                     highlightBorderWidth: 2,
-                    highlightBorderColor: '#d50000',
-                    highlightFillColor: '#d50000',
+                    highlightBorderColor: '#B21540',
+                    highlightFillColor: '#B21540',
                     highlightBorderWidth: 2
                 },
                 scope: 'peru',
@@ -61,11 +61,11 @@ var map;
             var mapData;
             var mapFills = {
                 defaultFill: "#e0e0e0",
-                level1: "#ffcdd2", //  0 - 15
-                level2: "#e57373", // 16 - 30
-                level3: "#f44336", // 31 - 45
-                level4: "#d32f2f", // 46 - 60
-                level5: "#b71c1c", // 60 <
+                level1: "#FBD2DD", //  0 - 15
+                level2: "#F8A4BB", // 16 - 30
+                level3: "#F47799", // 31 - 45
+                level4: "#F14977", // 46 - 60
+                level5: "#F0104E", // 60 <
             };
 
             var statsURL = "data/femicide_stats.json";
@@ -165,7 +165,7 @@ var map;
                 pointSize: 6,
                 hideHover: 'auto',
                 resize: true,
-                lineColors: ['#FDCFD8', '#ED1C55'],
+                lineColors: ['#F47799', '#ED1C55'],
                 gridTextSize: '14',
             });
         });
