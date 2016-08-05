@@ -1,13 +1,19 @@
 	function responsive() 
 			{
+				this.altura = $(window).outerHeight()
 				this.ancho = $(window).outerWidth()
 				var r =document.getElementsByClassName("row")[1]
+				var cf_r= function() {
+					var cf= document.getElementsByClassName("container-fluid")[0]
+					cf.style.height = altura + "px"}
 				if (r && ancho<768){
-					r.style.display = 'none';				
+					r.style.display = 'none';
+					cf_r()				
 				}
 
 				else{
 					r.style.display = 'block';
+					cf_r()					
 				}			
 			}
 

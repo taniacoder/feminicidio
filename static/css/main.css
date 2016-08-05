@@ -4,7 +4,7 @@ p, .femicide, .attempted, th, h4{
 /*home*/
 h1 {
   font-family: 'Rosario', sans-serif;
-  font-size: 66px;
+  font-size: 4rem;
   color: #ED1C55;
   padding: 5% 0 10%;
   font-weight: bold;
@@ -132,6 +132,11 @@ a:active, a:focus, a:target, .fa{
 .mh, .rh{
   height:50%;
 }
+/*flecha de las redes sociales*/
+.at4-arrow{
+  width:40px !important;
+  height:40px;
+}
 
 @media only screen and (max-width: 767px) {
     .title-chart{
@@ -148,8 +153,11 @@ a:active, a:focus, a:target, .fa{
     }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
 .pr-70{
   padding-right:100px;
+}
+h1{
+  font-size:9rem
 }
 }
