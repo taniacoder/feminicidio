@@ -5,7 +5,7 @@ p, .femicide, .attempted, th, h4{
 h1 {
   font-family: 'Rosario', sans-serif;
   font-size: 3rem;
-  color: #ED1C55;
+  color: #803293;
   padding: 5% 0 10%;
   font-weight: bold;
 }
@@ -23,7 +23,7 @@ h1 {
 }
 /*button*/
 .estadisticas {
-  background: #F64164;
+  background: #3F7FAA;
   border: none;
   color: #fff;
   padding: 5px 10px 5px 10px;

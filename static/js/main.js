@@ -51,7 +51,7 @@
 	            case obtener_md[0]:
 	                var modal_body = document.createElement("div")
 	                modal_body.className = "modal-body"
-	                modal_body.innerHTML = '<iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/XvKsDdQd3MY?enablejsapi=1" frameborder="0" allowfullscreen></iframe><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iure est, ab sequi, similique dolores eius totam velit quia illo, porro vitae quaerat magnam repellat eos laborum amet molestiae natus neque repudiandae dignissimos. Maiores eius ullam ducimus corporis hic ea, quod in, aspernatur cupiditate et mollitia quasi excepturi deserunt. Commodi!</div>'
+	                modal_body.innerHTML = '<iframe width="100%" height="315" src="https://www.youtube.com/embed/XvKsDdQd3MY?enablejsapi=1" frameborder="0" allowfullscreen id="video"></iframe><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iure est, ab sequi, similique dolores eius totam velit quia illo, porro vitae quaerat magnam repellat eos laborum amet molestiae natus neque repudiandae dignissimos. Maiores eius ullam ducimus corporis hic ea, quod in, aspernatur cupiditate et mollitia quasi excepturi deserunt. Commodi!</div>'
 	                obtener_md[0].appendChild(modal_body)
 	                break;
 	            case obtener_md[1]:
