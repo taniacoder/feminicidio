@@ -30,7 +30,7 @@
 	    var chichico = document.getElementsByClassName("chichico")
 	    for (var i = 0; i < chichico.length; i++) {
 	        var modal = document.createElement("div");
-	        modal.innerHTML = '<a id="play-button" href= "" type="button" data-toggle="modal" data-target=#' + [i] + '><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></a>'
+	        modal.innerHTML = '<a class="play-button" href= "" type="button" data-toggle="modal" data-target=#' + [i] + '><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></a>'
 	        chichico[i].appendChild(modal)
 	    }
 	}
@@ -41,7 +41,7 @@
 	        modal_transparent[j].setAttribute('id', j);
 	        var modal_dialog = document.createElement("div")
 	        modal_dialog.className = "modal-dialog"
-	        modal_dialog.innerHTML = '<div class="modal-content"><div class="modal-header"><button id="pause-button" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Modal title</h4></div><div class="modal-footer"></div></div>'
+	        modal_dialog.innerHTML = '<div class="modal-content"><div class="modal-header"><button class="pause-button" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Modal title</h4></div><div class="modal-footer"></div></div>'
 	        modal_transparent[j].appendChild(modal_dialog)
 	    }
 
@@ -141,12 +141,12 @@ var tag = document.createElement('script');
 
         function onPlayerReady(event) {
 
-          var playButton = document.getElementById("play-button");
+          var playButton = document.getElementsByClassName("play-button");
           playButton.addEventListener("click", function() {
             player.playVideo();
           });
                   
-          var pauseButton = document.getElementById("pause-button");
+          var pauseButton = document.getElementsByClassName("pause-button");
           pauseButton.addEventListener("click", function() {
             player.pauseVideo();
           });
