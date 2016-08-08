@@ -41,7 +41,7 @@
 	        modal_transparent[j].setAttribute('id', j);
 	        var modal_dialog = document.createElement("div")
 	        modal_dialog.className = "modal-dialog"
-	        modal_dialog.innerHTML = '<div class="modal-content"><div class="modal-header"><button type="button" class="close pause-button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Modal title</h4></div><div class="modal-footer"></div></div>'
+	        modal_dialog.innerHTML = '<div class="modal-content pause-button"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Modal title</h4></div><div class="modal-footer"></div></div>'
 	        modal_transparent[j].appendChild(modal_dialog)
 	    }
 
